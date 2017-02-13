@@ -13,8 +13,13 @@ namespace AnotherReviewSite.Models
         [Key] //Primary Key for Review table
 
         public int ID { get; set; }
+
+        [Display(Name = "Reviewed by")]
+        public string ReviewerName { get; set; }
         public string Title { get; set; }
+        [Display(Name = "Review")]
         public string Content { get; set; }
+        [Display(Name = "Posted on")]
         public DateTime PublishDate { get; set; }
 
 
